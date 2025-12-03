@@ -14,7 +14,7 @@ let teams = [
         team: "MI",
         trophy: "5 TROPHY",
         bg: "mibg.png",
-        img: "rohit.png",
+        img: "virat-removebg-preview.png",
         color: "rgba(0, 76, 255, 1)"
     },
     {
@@ -22,7 +22,7 @@ let teams = [
         team: "CSK",
         trophy: "5 TROPHY",
         bg: "cskbg.png",
-        img: "dhoni.png",
+        img: "virat-removebg-preview.png",
         color: "rgba(255, 225, 0, 1)"
     },
     {
@@ -54,7 +54,7 @@ let teams = [
         team: "SRH",
         trophy: "1 TROPHY",
         bg: "hydrabadbg.png",
-        img: "pat.png",
+        img: "virat-removebg-preview.png",
         color: "rgba(216, 83, 0, 1)"
     },
     {
