@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="left">
+                <h1>KANBAN <span>BOARD</span></h1>
+                <h4>Track your daily workflow</h4>
+            </div>
+            <div class="right">
+                <button class="new-task-btn" title="Add new task">+ New Task</button>
+            </div>
+        </nav>
+        <section class="board">
+            <div class="task-column" id="back">
+                <div class="task-heading">
+                    <div class="left">BACKLOG</div>
+                    <div class="right">0</div>
+                </div>
+                <div class="cards">
+
+                </div>
+            </div>
+            <div class="task-column" id="todo">
+                <div class="task-heading">
+                    <div class="left">TO-Do</div>
+                    <div class="right">0</div>
+                </div>
+                <div class="cards">
+
+                </div>
+            </div>
+            <div class="task-column" id="progress">
+                <div class="task-heading">
+                    <div class="left">IN PROGRESS</div>
+                    <div class="right">0</div>
+                </div>
+                <div class="cards">
+
+                </div>
+            </div>
+            <div class="task-column" id="completed">
+                <div class="task-heading">
+                    <div class="left">COMPLETED</div>
+                    <div class="right">0</div>
+                </div>
+                <div class="cards">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal ">
+        <div class="modal-box ">
+
+            <div class="modal-header">
+                <h2>Add New Task</h2>
+                <button class="modal-close">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <input type="text" maxlength="50" spellcheck="false" placeholder="Task title" class="modal-input"
+                    id="task-title-name">
+                <div class="empty-title">Title is neccesary to Fill</div>
+                <textarea maxlength="200" spellcheck="false" placeholder="Task description (optional)"
+                    class="modal-textarea" id="task-title-desc"></textarea>
+
+                <div class="priority-select">
+                    <div class="priority-option low active">
+                        <span class="prio-dot"></span>
+                        <span class="prio-text">Low</span>
+                    </div>
+
+                    <div class="priority-option mid ">
+                        <span class="prio-dot"></span>
+                        <span class="prio-text">Medium</span>
+                    </div>
+
+                    <div class="priority-option high">
+                        <span class="prio-dot"></span>
+                        <span class="prio-text">High</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn cancel modal-close">Cancel</button>
+                <button class="btn add" id="addtask">Add Task</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
